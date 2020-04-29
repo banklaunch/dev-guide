@@ -51,9 +51,9 @@
       s.parentNode.insertBefore(wf, s)
     })()
     </script>
-    <link rel='stylesheet' href="{{ 'css/main.css' | prepend: site.baseurl }}"
+    <link rel='stylesheet' href="{{ '/css/main.css' | prepend: site.baseurl }}"
           type='text/css' media='all' />
-    <link rel='stylesheet' href="{{ 'css/inline.css' | prepend: site.baseurl }}"
+    <link rel='stylesheet' href="{{ '/css/inline.css' | prepend: site.baseurl }}"
           type='text/css' media='all' />
     <!--[if lt IE 9]>
     <link rel='stylesheet' id='vc_lte_ie9-css'
@@ -113,7 +113,7 @@
     <nav>
         {% for post in site.posts %}
         <div>
-            ; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            ; <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
         </div>
         {% endfor %}
     </nav>
