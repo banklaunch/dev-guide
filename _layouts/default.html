@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Developer Guide &#8211; Banklaunch.io</title>
+    <style type="text/css">
+        main {
+            position: absolute;
+        }
+
+        .sidebar, #main {
+            transition: all .3s ease-out;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+            position: absolute;
+            margin-left: 20px;
+            bottom: 0;
+        }
+
+        .sidebar {
+            top: 200px;
+            width: 250px;
+            height: 600px;
+            left: 0;
+        }
+    </style>
+    <script>
+    /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+    if (typeof WebFontConfig === 'undefined') {
+      WebFontConfig = new Object()
+    }
+
+    /* WGL CUSTOM TYPOGRAPHY FIX */
+    WebFontConfig['google'] = {
+      families: [
+        'Nunito:400,600,700',
+        'Poppins:700,500,600,400,500,600,700',
+        'Playfair+Display:700italic,'],
+    };
+    /* \ WGL CUSTOM TYPOGRAPHY FIX */
+
+    (function() {
+      var wf = document.createElement('script')
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js'
+      wf.type = 'text/javascript'
+      wf.async = 'true'
+      var s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(wf, s)
+    })()
+    </script>
+    <link rel='stylesheet' href='/css/main.css'
+          type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/inline.css'
+          type='text/css' media='all' />
+    <!--[if lt IE 9]>
+    <link rel='stylesheet' id='vc_lte_ie9-css'
+          href='https://banklaunch.io/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css?ver=6.0.5'
+          type='text/css' media='screen' />
+    <![endif]-->
+
+    <script
+            id="mcjs">!function(c, h, i, m, p) {
+      m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+    }(document, 'script',
+        'https://chimpstatic.com/mcjs-connected/js/users/5d36dd4115b392a2a2b8f4380/79db1ebc377ecb8d40fe1893b.js')</script>
+</head>
+
+<body data-cmplz=1
+      class="page-template-default page page-id-1278 wp-embed-responsive wpb-js-composer js-comp-ver-6.0.5 vc_responsive theme-gradient">
+</div>
+<main id="main">
+    <a href='https://banklaunch.io' target="_blank">
+        <img class="default_logo"
+             src="/img/BankLaunch.io_logo_main.png" alt=""
+             style="height:38px;">
+
+    </a>
+    <div class="wgl-container">
+        <div class="row">
+            <div id='main-content' class="wgl_col-12">
+                <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                                <div id=softlab_dbl_5ea983f43ad5e class="softlab_module_double_headings acenter">
+                                    <a href="/">
+                                        <div class="heading_subtitle"
+                                             style="font-size:18px; line-height:20px; font-weight:400; ">&lt;
+                                            developer_guide &gt;
+                                        </div>
+                                    </a>
+                                    <div class="heading_title"
+                                         style="font-size:36px; line-height:1.333; font-weight:700; ">
+                                        <div class="heading_title_mobile" style="font-size:29px;">{{ page.title }}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ content }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vc_row-full-width vc_clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<aside class="sidebar">
+    <nav>
+        {% for post in site.posts %}
+        <div>
+            ; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </div>
+        {% endfor %}
+    </nav>
+</aside>
+</body>
+</html>
